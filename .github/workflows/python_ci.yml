@@ -1,12 +1,19 @@
 name: Python CI
 
+<<<<<<< HEAD
 on: push
+=======
+on:
+  - push
+  - pull_request
+>>>>>>> 945e0c7 (Create python_ci.yml)
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+<<<<<<< HEAD
         python-version: [3.6, 3.7, 3.8]
 
      steps:
@@ -15,10 +22,24 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
+=======
+        python-version: [3.6]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+>>>>>>> 945e0c7 (Create python_ci.yml)
       - name: Install dependencies
         run: |
           pip install poetry
           make install
       - name: Run linter and pytest
         run: |
+<<<<<<< HEAD
           make lint
+=======
+          poetry add --dev wemake-python-styleguide
+          poetry run flake8 brain_games
+>>>>>>> 945e0c7 (Create python_ci.yml)
