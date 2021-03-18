@@ -7,10 +7,8 @@ import prompt
 def welcome_user():
     """Ask user's name."""
     name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
+    print('Hello, {a}!'.format(a=name))  # noqa: WPS421
 
-def main():
-    welcome_user()
 
 if __name__ == '__main__':
-    main()
+    welcome_user()
