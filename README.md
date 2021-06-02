@@ -11,4 +11,9 @@
 ### Brain-even demonstration: 
 This game asks user if number is even or not.
 
-[![asciicast](https://asciinema.org/a/VelMtsG6aJqTJAgm0eKDk6zmW.svg)](https://asciinema.org/a/VelMtsG6aJqTJAgm0eKDk6zmW)
+[![asciicast](https://asciinema.org/a/404243.svg)](https://asciinema.org/a/404243)
+
+### Brain-calc demonstration:
+This game asks user to calculate an expression.
+
+[![asciicast](https://asciinema.org/a/417863.svg)](https://asciinema.org/a/417863)
