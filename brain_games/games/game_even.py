@@ -21,13 +21,14 @@ def is_even(num):
     return num != 0 and num % 2 == 0
 
 
-def start_round():
+def generate_round():
     """Ask question and give true answer.
 
     Returns:
         Return question and true answer.
     """
-    num = random.randint(0, 100)  # noqa: S311
+    max_number = 100
+    num = random.randint(0, max_number)  # noqa: S311
     if is_even(num) is True:
         answer = 'yes'
     else:
