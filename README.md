@@ -16,4 +16,9 @@ This game asks user if number is even or not.
 ### Brain-calc demonstration:
 This game asks user to calculate an expression.
 
-[![asciicast](https://asciinema.org/a/417863.svg)](https://asciinema.org/a/417863)
+[![asciicast](https://asciinema.org/a/418169.svg)](https://asciinema.org/a/418169)
+
+### Brain-gcd demonstration:
+This game asks user to find the greatest common divisor of two numbers.
+
+[![asciicast](https://asciinema.org/a/418184.svg)](https://asciinema.org/a/418184)
