@@ -3,9 +3,7 @@
 import random
 
 QUESTION_OF_GAME = (
-    'Answer "yes" if the number is even,'
-    +
-    ' otherwise answer "no".'
+    'Answer "yes" if the number is even, otherwise answer "no".'
 )
 
 

@@ -3,9 +3,7 @@
 import random
 
 QUESTION_OF_GAME = (
-    'Answer "yes" if given number is prime.'
-    +
-    ' Otherwise answer "no".'
+    'Answer "yes" if given number is prime, otherwise answer "no".'
 )
 
 
