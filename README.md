@@ -27,3 +27,8 @@ This game asks user to find the greatest common divisor of two numbers.
 This game asks user to complete math progression.
 
 [![asciicast](https://asciinema.org/a/418812.svg)](https://asciinema.org/a/418812)
+
+### Brain-prime demonstration:
+This game asks user if number is prime or not.
+
+[![asciicast](https://asciinema.org/a/418875.svg)](https://asciinema.org/a/418875)
