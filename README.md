@@ -22,3 +22,8 @@ This game asks user to calculate an expression.
 This game asks user to find the greatest common divisor of two numbers.
 
 [![asciicast](https://asciinema.org/a/418184.svg)](https://asciinema.org/a/418184)
+
+### Brain-progression demonstration:
+This game asks user to complete math progression.
+
+[![asciicast](https://asciinema.org/a/418812.svg)](https://asciinema.org/a/418812)
