@@ -3,7 +3,7 @@
 import operator
 import random
 
-question_of_game = (
+QUESTION_OF_GAME = (
     'What is the result of the expression?'
 )
 

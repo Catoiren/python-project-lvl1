@@ -2,7 +2,7 @@
 
 import random
 
-question_of_game = (
+QUESTION_OF_GAME = (
     'What number is missing in the progression?'
 )
 

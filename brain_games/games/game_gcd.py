@@ -2,7 +2,7 @@
 
 import random
 
-question_of_game = (
+QUESTION_OF_GAME = (
     'Find the greatest common divisor of given numbers.'
 )
 
@@ -31,9 +31,8 @@ def generate_round():
     Returns:
         Return question and true answer.
     """
-    max_number = 100
-    operand1 = random.randint(0, max_number)  # noqa: S311
-    operand2 = random.randint(0, max_number)  # noqa: S311
+    operand1 = random.randint(0, 100)  # noqa: S311
+    operand2 = random.randint(0, 100)  # noqa: S311
     question = '{a} {b}'.format(a=operand1, b=operand2)
     answer = find_common_divisor(operand1, operand2)
     return question, str(answer)

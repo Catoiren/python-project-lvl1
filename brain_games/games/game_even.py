@@ -2,7 +2,7 @@
 
 import random
 
-question_of_game = (
+QUESTION_OF_GAME = (
     'Answer "yes" if the number is even,'
     +
     ' otherwise answer "no".'
@@ -27,8 +27,7 @@ def generate_round():
     Returns:
         Return question and true answer.
     """
-    max_number = 100
-    num = random.randint(0, max_number)  # noqa: S311
+    num = random.randint(0, 100)  # noqa: S311
     if is_even(num) is True:
         answer = 'yes'
     else:
