@@ -14,7 +14,7 @@ def start(game):
     print('Welcome to the Brain Games!')  # noqa: WPS421
     player_name = prompt.string('May I have your name? ')
     print('Hello, {a}!'.format(a=player_name))  # noqa: WPS421
-    print(game.question_of_game)  # noqa: WPS421
+    print(game.QUESTION_OF_GAME)  # noqa: WPS421
     index = 0
     while index < 3:
         (question, true_answer) = (game.generate_round())
