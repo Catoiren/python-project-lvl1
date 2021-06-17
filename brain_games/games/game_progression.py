@@ -22,9 +22,8 @@ def generate_progression(first_num, progression_diff, progression_length):
         Return progression of 10 numbers.
     """
     progression = []
-    for index in range(progression_length):
+    for index in range(0, progression_length):
         progression.append(str(first_num + progression_diff * index))
-        index += 1
     return progression
 
 
