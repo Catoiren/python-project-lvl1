@@ -41,7 +41,9 @@ def generate_round():
     progression = generate_progression(
         first_num, progression_diff, progression_length,
     )
-    missing_number_index = random.randint(0, progression_length)  # noqa: S311
+    missing_number_index = random.randint(  # noqa: S311
+        0, progression_length - 1,
+    )
     true_answer = progression[missing_number_index]
     progression[missing_number_index] = '..'
     question = ' '.join(progression)
