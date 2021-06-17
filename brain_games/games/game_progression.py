@@ -5,23 +5,25 @@ import random
 QUESTION_OF_GAME = (
     'What number is missing in the progression?'
 )
+MAX_FIRST_NUMBER = 100
+MIN_PROGRESSION_DIFF = 2
+MAX_PROGRESSION_DIFF = 10
 
 
-def generate_progression(first_num, increaser, length_progression):
+def generate_progression(first_num, progression_diff, progression_length):
     """Generate math progression.
 
     Args:
         first_num: int
-        increaser: int
-        length_progression: int
+        progression_diff: int
+        progression_length: int
 
     Returns:
         Return progression of 10 numbers.
     """
     progression = []
-    index = 0
-    while index <= length_progression:
-        progression.append(str(first_num + increaser * index))
+    for index in range(progression_length):
+        progression.append(str(first_num + progression_diff * index))
         index += 1
     return progression
 
@@ -32,12 +34,16 @@ def generate_round():
     Returns:
         Return question and true answer.
     """
-    first_num = random.randint(1, 100)  # noqa: S311
-    increaser = random.randint(2, 10)  # noqa: S311
-    length_progression = 10
-    progression = generate_progression(first_num, increaser, length_progression)
-    missing_number = random.randint(0, length_progression)  # noqa: S311
-    true_answer = progression.pop(missing_number)
-    progression.insert(missing_number, '..')
+    first_num = random.randint(1, MAX_FIRST_NUMBER)  # noqa: S311
+    progression_diff = random.randint(  # noqa: S311
+        MIN_PROGRESSION_DIFF, MAX_PROGRESSION_DIFF,
+    )
+    progression_length = 10
+    progression = generate_progression(
+        first_num, progression_diff, progression_length,
+    )
+    missing_number_index = random.randint(0, progression_length)  # noqa: S311
+    true_answer = progression[missing_number_index]
+    progression[missing_number_index] = '..'
     question = ' '.join(progression)
     return question, true_answer

@@ -8,7 +8,7 @@ def main():
     """Greet user."""
     print('Welcome to the Brain Games!')
     name = cli.welcome_user('May I have your name? ')
-    print('Hello, {a}!'.format(a=name))
+    print('Hello, {0}!'.format(name))
 
 
 if __name__ == '__main__':

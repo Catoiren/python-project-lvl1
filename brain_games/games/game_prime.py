@@ -5,6 +5,7 @@ import random
 QUESTION_OF_GAME = (
     'Answer "yes" if given number is prime, otherwise answer "no".'
 )
+MAX_NUMBER = 100
 
 
 def is_prime(num):
@@ -16,13 +17,12 @@ def is_prime(num):
     Returns:
         Return bool.
     """
-    if num == 1:
+    if num <= 1:
         return False
-    index = 2
-    while index < num:
-        if num % index == 0:
+    for counter in range(2, num - 1):
+        if num % counter == 0:
             return False
-        index += 1
+        counter += 1
     return True
 
 
@@ -32,8 +32,8 @@ def generate_round():
     Returns:
         Return question and true answer.
     """
-    num = random.randint(1, 100)  # noqa: S311
-    if is_prime(num) is True:
+    num = random.randint(1, MAX_NUMBER)  # noqa: S311
+    if is_prime(num):
         true_answer = 'yes'
     else:
         true_answer = 'no'

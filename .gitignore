@@ -8,4 +8,4 @@ coverage.xml
 .pytest_cache/
 .python-version
 .vim
-.idea
+.idea/

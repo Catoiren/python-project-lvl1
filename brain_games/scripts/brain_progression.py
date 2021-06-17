@@ -6,8 +6,8 @@ from brain_games.games import game_progression
 
 
 def main():
-    """Start game_progression."""
-    starter.start(game_progression)
+    """Launch game_progression."""
+    starter.launch(game_progression)
 
 
 if __name__ == '__main__':

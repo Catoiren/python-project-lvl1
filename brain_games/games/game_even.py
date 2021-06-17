@@ -5,6 +5,7 @@ import random
 QUESTION_OF_GAME = (
     'Answer "yes" if the number is even, otherwise answer "no".'
 )
+MAX_NUMBER = 100
 
 
 def is_even(num):
@@ -16,7 +17,7 @@ def is_even(num):
     Returns:
         Return True or False.
     """
-    return num != 0 and num % 2 == 0
+    return num % 2 == 0
 
 
 def generate_round():
@@ -25,8 +26,8 @@ def generate_round():
     Returns:
         Return question and true answer.
     """
-    num = random.randint(0, 100)  # noqa: S311
-    if is_even(num) is True:
+    num = random.randint(0, MAX_NUMBER)  # noqa: S311
+    if is_even(num):
         answer = 'yes'
     else:
         answer = 'no'

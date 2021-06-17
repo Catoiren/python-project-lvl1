@@ -1,37 +1,38 @@
 """Main games module."""
+
 import prompt
 
+ROUNDS_COUNT = 3
 
-def start(game):
-    """Start games.
+
+def launch(game):
+    """Launch games.
 
     Args:
-        game: str
+        game: game module
 
     Returns:
         Return cli to player.
     """
-    print('Welcome to the Brain Games!')  # noqa: WPS421
+    print('Welcome to the Brain Games!')
     player_name = prompt.string('May I have your name? ')
-    print('Hello, {a}!'.format(a=player_name))  # noqa: WPS421
-    print(game.QUESTION_OF_GAME)  # noqa: WPS421
-    index = 0
-    while index < 3:
-        (question, true_answer) = (game.generate_round())
+    print('Hello, {0}!'.format(player_name))
+    print(game.QUESTION_OF_GAME)
+    counter = 0
+    while counter < ROUNDS_COUNT:
+        question, true_answer = game.generate_round()
+        print('Question: {0}'.format(question))
         player_answer = prompt.string(
-            'Question: {a}\nYour answer: '.format(a=question),
+            'Your answer: ',
         )
         if player_answer == true_answer:
-            print('Correct!')  # noqa: WPS421
+            print('Correct!')
         else:
-            print(  # noqa: WPS421
-                ("'{a}' is wrong answer ;(. Correct answer was '{b}'."
-                 ).format(a=player_answer, b=true_answer),
+            print(
+                ("'{0}' is wrong answer ;(. Correct answer was '{1}'."
+                 ).format(player_answer, true_answer),
             )
-            return print(  # noqa: WPS421
-                "Let's try again, {a}!".format(a=player_name),
-            )
-        index += 1
-    return print(  # noqa: WPS421
-        'Congratulations, {a}!'.format(a=player_name),
-    )
+            print("Let's try again, {0}!".format(player_name))
+            return
+        counter += 1
+    print('Congratulations, {0}!'.format(player_name))
