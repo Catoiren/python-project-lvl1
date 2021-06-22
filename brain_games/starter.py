@@ -18,8 +18,7 @@ def launch(game):
     player_name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(player_name))
     print(game.QUESTION_OF_GAME)
-    counter = 0
-    while counter < ROUNDS_COUNT:
+    for _ in range(ROUNDS_COUNT):
         question, true_answer = game.generate_round()
         print('Question: {0}'.format(question))
         player_answer = prompt.string(
@@ -34,5 +33,4 @@ def launch(game):
             )
             print("Let's try again, {0}!".format(player_name))
             return
-        counter += 1
     print('Congratulations, {0}!'.format(player_name))

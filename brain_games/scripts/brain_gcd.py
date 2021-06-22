@@ -2,12 +2,12 @@
 """Script to start gcd game."""
 
 from brain_games import starter
-from brain_games.games import game_gcd
+from brain_games.games import gcd
 
 
 def main():
     """Launch game_gcd()."""
-    starter.launch(game_gcd)
+    starter.launch(gcd)
 
 
 if __name__ == '__main__':

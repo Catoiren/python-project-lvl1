@@ -2,12 +2,12 @@
 """Script to start brain_prime game."""
 
 from brain_games import starter
-from brain_games.games import game_prime
+from brain_games.games import prime
 
 
 def main():
     """Launch game_prime()."""
-    starter.launch(game_prime)
+    starter.launch(prime)
 
 
 if __name__ == '__main__':

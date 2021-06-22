@@ -22,7 +22,6 @@ def is_prime(num):
     for counter in range(2, num - 1):
         if num % counter == 0:
             return False
-        counter += 1
     return True
 
 

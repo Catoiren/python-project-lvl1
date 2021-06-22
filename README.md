@@ -13,7 +13,7 @@ _Each game asks 3 questions in a row. If user gives 3 correct answers, he win._
 ___
 Install it using pip:
 
-    pip install hexlet-code
+    pip install git+https://github.com/Catoiren/python-project-lvl1.git
 
 ## Features
 ___

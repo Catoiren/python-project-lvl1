@@ -2,12 +2,12 @@
 """Script to start even game."""
 
 from brain_games import starter
-from brain_games.games import game_even
+from brain_games.games import even
 
 
 def main():
     """Launch game_even()."""
-    starter.launch(game_even)
+    starter.launch(even)
 
 
 if __name__ == '__main__':

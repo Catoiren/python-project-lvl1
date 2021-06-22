@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.5.1"
+version = "0.5.2"
 description = "Package respesents 5 math games for shell. Created as a student project."
 authors = ["Nadya Aleshechkina <catoiren55@gmail.com>"]
 packages = [
