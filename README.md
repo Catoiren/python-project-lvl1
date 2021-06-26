@@ -2,7 +2,7 @@
 ___
 #### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Catoiren/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Catoiren/python-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/Catoiren/python-project-lvl1)
 ![Python CI](https://github.com/Catoiren/python-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
 _Package includes a bunch of math games. Interface is based on shell._
